@@ -1,6 +1,10 @@
 body{
     margin: 0;
+    border: solid 1px yellow;
     font-family: 'Roboto', sans-serif;
+    
+    
+    
     
 }
 
@@ -11,6 +15,8 @@ header{
     color: white;
     padding: 20px;
 }
+
+
 
 .logo{
     font-size: 24px;
@@ -29,4 +35,41 @@ nav a{
     color: white;
     text-decoration: none;
     font-size: 18px;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    color: white;
+    padding: 50px;
+    text-wrap: wrap;
+    gap: 20px;
+
+
+}
+
+.hero h1{
+    font-size: 48px;
+    font-weight: bold;
+
+}
+
+.hero p{
+    smaller-font-size: 18px;
+
+}
+
+button{
+    background-color: #3882f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 24px;
+}
+
+.hero-image{
+    background-color: grey;
+    width: 400px;
+    height: 200px;
 }
