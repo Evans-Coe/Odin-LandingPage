@@ -37,13 +37,17 @@ nav a{
     justify-content: center;
     background-color: #1F2937;
     color: white;
-    padding: 50px;
+    padding: 100px 10%;
     text-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
-    min-height: auto;
+    min-height: 400px;
 
 
+}
+
+.hero-content{
+    max-width: 500px;
 }
 
 .hero h1{
@@ -64,18 +68,26 @@ button{
     border-radius: 5px;
     padding: 8px 24px;
     cursor:pointer;
-    button:hover{opacity: 0.9}
     transition: all 0.2s ease;
+    font-weight: bold;
+    min-width: 120px;
+}
+
+button:hover{
+    opacity: 0.9;
+    transform:translateY(-1px);
 }
 
 .hero-image{
     background-color: grey;
     width: 400px;
     height: 200px;
+    flex-shrink: 0;
+    border-radius: 8px;
 }
 
 .info{
-    padding-top: 20px;
+    padding: 80px 20px;
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -96,6 +108,12 @@ button{
     height: 150px;
     border: solid  3px #3882f6;
     border-radius: 8px;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-box:hover{
+    transform: scale(1.03);
 }
 
 .card{
@@ -106,14 +124,14 @@ button{
 
 .quote{
     background-color: #e5e7eb;
-    padding: 80px 20%;
+    padding: 80px 25%;
     text-align: center;
 }
 
 .quote-text{
     font-size: 36px;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.5;
 }
 
@@ -124,3 +142,58 @@ cite{
     font-size: 24px;
 }
 
+.cta{
+    background-color: #3882F6;
+    margin: 80px 0;
+    padding: 48px 15%;
+    border-radius: 8px;
+    
+}
+
+.cta-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.cta-text{
+    color: white;
+    text-align: left;
+
+}
+
+.cta-text p{ 
+    margin: 5px 0 0;
+    opacity: 0.9;
+}
+
+.cta-text h3{
+    font-size: 24px;
+    margin:0;
+}
+
+
+
+.cta-button{
+
+}
+
+.cta-button button{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button button:hover{
+    background-color: white;
+    color: #3882F6;
+    opacity: 0.9;
+}
