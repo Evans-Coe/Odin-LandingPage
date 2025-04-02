@@ -40,6 +40,8 @@ nav a{
     padding: 50px;
     text-wrap: wrap;
     gap: 20px;
+    align-items: center;
+    min-height: auto;
 
 
 }
@@ -62,6 +64,8 @@ button{
     border-radius: 5px;
     padding: 8px 24px;
     cursor:pointer;
+    button:hover{opacity: 0.9}
+    transition: all 0.2s ease;
 }
 
 .hero-image{
@@ -98,5 +102,25 @@ button{
     font-size: 16px;
     margin-top: 10px;
     width: 150px;
+}
+
+.quote{
+    background-color: #e5e7eb;
+    padding: 80px 20%;
+    text-align: center;
+}
+
+.quote-text{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+cite{
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    font-size: 24px;
 }
 
